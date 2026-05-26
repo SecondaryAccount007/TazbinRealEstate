@@ -1,6 +1,6 @@
 # Taz Nazim Real Estate Website
 
-A professional luxury real estate website for Dubai, built with Next.js 14 and Supabase.
+A professional luxury real estate website for Dubai, built with Next.js 15 and Supabase.
 
 ---
 
@@ -85,8 +85,6 @@ Password: whatever you set as `ADMIN_PASSWORD`
 
 ## 🖼️ Adding/Updating Images
 
-For property and profile images:
-
 **Option A — Supabase Storage (Recommended):**
 1. In Supabase, go to **Storage**
 2. Create a bucket called `images` (set to public)
@@ -100,20 +98,15 @@ For property and profile images:
 
 ## ✏️ Common Tasks
 
-**Change agent photo:**
-Admin → Site Settings → About Section → Agent Photo URL
+**Change agent photo:** Admin → Site Settings → About Section → Agent Photo URL
 
-**Change hero background:**
-Admin → Site Settings → Hero Section → Background Image URL
+**Change hero background:** Admin → Site Settings → Hero Section → Background Image URL
 
-**Add a new property:**
-Admin → Properties → Add Property
+**Add a new property:** Admin → Properties → Add Property
 
-**Hide a section:**
-Admin → Page Sections → toggle off
+**Hide a section:** Admin → Page Sections → toggle off
 
-**Set up WhatsApp:**
-Admin → Site Settings → Contact Info → WhatsApp Number (digits only, e.g. `971501234567`)
+**Set up WhatsApp:** Admin → Site Settings → Contact Info → WhatsApp Number (digits only, e.g. `971501234567`)
 
 ---
 
@@ -154,4 +147,4 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ---
 
-Built with Next.js 14, Tailwind CSS, Framer Motion, and Supabase.
+Built with Next.js 15, Tailwind CSS, Framer Motion, and Supabase.
