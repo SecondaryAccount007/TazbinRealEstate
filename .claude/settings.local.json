@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "Bash(Test-Path \"e:\\\\tonoy bhai\\\\Real estate\\\\.env.local\")",
+      "Bash(Start-Sleep -Seconds 6)",
+      "Bash(Get-Content \"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\e--tonoy-bhai-Real-estate\\\\392b4ca0-8d62-45ca-8587-9652a8b6da13\\\\tasks\\\\bld92uf3o.output\")",
+      "Bash(Select-Object -Last 20)"
+    ]
+  }
+}

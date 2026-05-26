@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C9A96E;
+  --gold-light: #E8D5A3;
+  --obsidian: #0A0A0A;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #0A0A0A;
+    color: #ffffff;
+    font-family: var(--font-inter), system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-cormorant), Georgia, serif;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  ::selection {
+    background-color: #C9A96E;
+    color: #0A0A0A;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #111111;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C9A96E;
+    border-radius: 3px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-gold text-obsidian font-sans font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:bg-gold-light hover:shadow-[0_0_30px_rgba(201,169,110,0.3)] active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center gap-2 px-8 py-3.5 border border-gold text-gold font-sans font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:bg-gold hover:text-obsidian hover:shadow-[0_0_30px_rgba(201,169,110,0.2)] active:scale-[0.98];
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 px-6 py-3 text-white/70 font-sans text-sm tracking-wider uppercase transition-all duration-300 hover:text-gold;
+  }
+
+  .section-label {
+    @apply text-gold font-sans text-xs tracking-[0.3em] uppercase font-medium;
+  }
+
+  .section-title {
+    @apply font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight;
+  }
+
+  .gold-divider {
+    @apply w-12 h-px bg-gold my-6;
+  }
+
+  .card-dark {
+    @apply bg-obsidian-200 border border-white/5 transition-all duration-300 hover:border-gold/30;
+  }
+
+  .input-dark {
+    @apply w-full bg-obsidian-200 border border-white/10 text-white placeholder-white/30 px-4 py-3 text-sm font-sans focus:outline-none focus:border-gold/60 transition-colors duration-200;
+  }
+
+  .admin-input {
+    @apply w-full bg-obsidian-300 border border-white/10 text-white placeholder-white/30 px-4 py-3 text-sm font-sans rounded focus:outline-none focus:border-gold/60 transition-colors duration-200;
+  }
+
+  .admin-label {
+    @apply block text-white/60 text-xs font-sans tracking-widest uppercase mb-2;
+  }
+
+  .admin-card {
+    @apply bg-obsidian-100 border border-white/5 rounded-lg p-6;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold via-gold-light to-gold;
+  }
+
+  .overlay-dark {
+    background: linear-gradient(to bottom, rgba(10,10,10,0.3) 0%, rgba(10,10,10,0.7) 60%, rgba(10,10,10,0.95) 100%);
+  }
+
+  .overlay-dark-center {
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(10,10,10,0.8) 100%);
+  }
+
+  .animate-delay-100 { animation-delay: 100ms; }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-300 { animation-delay: 300ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
+  .animate-delay-500 { animation-delay: 500ms; }
+}
+
+/* N8N Chat Widget overrides */
+#n8n-chat .chat-window {
+  border-radius: 0 !important;
+  border: 1px solid rgba(201, 169, 110, 0.3) !important;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5) !important;
+}
+
+#n8n-chat .chat-toggle {
+  background: #C9A96E !important;
+  color: #0A0A0A !important;
+}
